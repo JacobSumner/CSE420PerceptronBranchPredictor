@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <fstream> 
+#include <cmath>
 #include "pin.H"
 using namespace std;
 
@@ -198,6 +199,39 @@ struct tournament{
 
 };
 
+
+struct perceptron_predictor{
+
+  UINT64 perceptron[512] = {0};
+  
+  UINT64 weight[512] = {0};
+
+  UINT64 history[1024] = {0};
+
+
+
+  void training(bool taken_actually){
+
+
+
+  }
+
+  void update_prediction(bool taken_actually, UINT64 address){
+
+
+
+  }
+
+  bool get_prediction(UINT64 address){
+
+
+
+  }
+
+};
+
+
+
 class myBranchPredictor: public BranchPredictor {
   public:
   myBranchPredictor() {
@@ -315,6 +349,5 @@ int main(int argc, char * argv[])
     return 0;
 }
 
-//correlating 94.8
-//94.6
+
 
