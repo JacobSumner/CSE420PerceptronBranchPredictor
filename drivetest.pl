@@ -37,7 +37,7 @@ $threads = 1;
 # Second is the directory where the test needs to be executed, mostly ./ works
 # Third is the test executable. 
 # the remainder are the test args, as would appear in the c argv array
-# The first 6 should work but I am not yet sure if the last 4 will work. I need to see what inputs they require
+# The first 6 should work but I am not yet sure if the last 6 will work. I need to see what inputs they require and for last two how they get saved to our system.
 @testcases = ( 
 	    [
          "Black-Scholes",
@@ -126,6 +126,22 @@ $threads = 1;
          "1",
          "5",
          "$home/benchmarks/inputs/x264",
+        ],
+	[
+         "Go",
+         "./",
+         "$home/benchmarks/binaries/099.gprof",
+         "1",
+         "5",
+         "$home/benchmarks/inputs/099.gprof",
+        ],
+	[
+         "Motorola 88100",
+         "./",
+         "$home/benchmarks/binaries/124.gprof",
+         "1",
+         "5",
+         "$home/benchmarks/inputs/124.gprof",
         ],
        ); 
 
